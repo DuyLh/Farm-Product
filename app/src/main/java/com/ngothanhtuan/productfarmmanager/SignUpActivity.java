@@ -71,7 +71,7 @@ public class SignUpActivity extends AppCompatActivity {
         }
         else {
             if (edtPass.length() == 0){
-                Toast.makeText(SignUpActivity.this, "Password can't null!!!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SignUpActivity.this, "", Toast.LENGTH_SHORT).show();
                 Animation shake = AnimationUtils.loadAnimation(SignUpActivity.this, R.anim.shake);
                 edtPass.startAnimation(shake);
                 return false;
