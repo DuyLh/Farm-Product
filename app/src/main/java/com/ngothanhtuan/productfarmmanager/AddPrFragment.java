@@ -128,7 +128,7 @@ public class AddPrFragment extends Fragment {
         btnChooseImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choosePhoto();
+                choosePicture();
             }
         });
 
@@ -190,10 +190,9 @@ public class AddPrFragment extends Fragment {
         startActivityForResult(intent,RESQUEST_TAKE_PHOTO);
     }
 
-    private void choosePhoto(){
+        private void choosePicture(){
         Intent intent = new Intent(Intent.ACTION_PICK);
         intent.setType("image/*");
-        startActivityForResult(intent, RESQUEST_CHOOSE_PHOTO);
     }
 
     @Override
