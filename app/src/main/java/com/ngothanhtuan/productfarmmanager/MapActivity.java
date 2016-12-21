@@ -41,6 +41,7 @@ public class MapActivity extends CustomActivity {
                 LatLng framgiaVietnam = new LatLng(21.0166458, 105.7841248);
                 mGoogleMap
                         .addMarker(
+                                new MarkerOptions().position(framgiaVietnam).title("Vietnam"));
                 mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(framgiaVietnam, 18));
             }
         });
